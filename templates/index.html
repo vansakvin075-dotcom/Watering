@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arduino LED Control</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 80px;
+            background: #f2f6ff;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .on { background: green; color: white; }
+        .off { background: red; color: white; }
+
+        #status {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Arduino LED Control</h1>
+
+    <button class="on" onclick="sendCommand('ON')">ON</button>
+    <button class="off" onclick="sendCommand('OFF')">OFF</button>
+
+    <div id="status">Status: waiting...</div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
